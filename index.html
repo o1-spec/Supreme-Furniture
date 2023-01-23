@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="icon" href="images/house-hero/house-hero-2.jpg">
+    <script defer src="src/script.js"></script>
+    <title>Supreme Furnitures</title>
+</head>
+
+<body class="overflow-x-hidden bg-gray-100">
+    <nav class="sticky top-0 bg-gray-100 z-10 mx-auto px-12 pt-0.5 pb-0.4">
+        <div class="flex justify-between items-center space-x-22 my-6">
+            <!--Nav Logo-->
+            <div>
+                <p class="text-2xl text-black uppercase font-bold z-100">Supreme</p>
+            </div>
+            <!--Nav Links-->
+            <div class="hidden items-center space-x-8 lg:flex">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#products">Products</a>
+                <a class="link" href="#footer">Newsfeed</a>
+                <a class="link" href="#popular">Promo</a>
+            </div>
+            <!--Nav Logo-->
+            <div class="hidden lg:flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                <div class="border-l border-gray-500">
+                    <a class="bg-white rounded-md px-4 ml-3 py-2 duration-75 hover:bg-black hover:text-white"
+                        href="#">Sign
+                        Up</a>
+                </div>
+                <div>
+                    <a class=" bg-black rounded-md px-4 duration-75 py-2 hover:bg-white text-white hover:text-black"
+                        href="#">Log
+                        in</a>
+                </div>
+            </div>
+
+            <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none z-40" type="button">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!--Mobile menu-->
+        <div id="menu"
+            class="absolute top-0 bottom-0 left-0 hidden flex-col w-full min-h-screen space-y-3 uppercase bg-white text-black py-24 px-10 z-20">
+            <div class="items-center flex flex-col space-y-5">
+                <a id="nav-link" class="tracking-widest text-sm hover:text-gray-400 font-semibold" href="#hero">Home</a>
+                <a id="nav-link" class="tracking-widest text-sm hover:text-gray-400 font-semibold"
+                    href="#products">Products</a>
+                <a id="nav-link" class="tracking-widest text-sm hover:text-gray-400 font-semibold"
+                    href="#footer">Newsfeed</a>
+                <a id="nav-link" class="tracking-widest text-sm hover:text-gray-400 font-semibold"
+                    href="#popular">Promo</a>
+            </div>
+            <!--Nav Logo-->
+            <div class="flex flex-col justify-center space-y-10 w-full">
+                <div class="flex space-x-3 justify-center mt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                </div>
+                <div class="border-t border-gray-400 pt-6 mx-auto">
+                    <a class="bg-white rounded-md ml-3 py-2 px-24 duration-75 hover:bg-black hover:text-white w-full"
+                        href="#">Sign Up</a>
+                </div>
+                <div class="mx-auto">
+                    <a class=" bg-black rounded-md duration-75 py-2 hover:bg-white text-white hover:text-black px-24"
+                        href="#">Log in</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div
+            class="mt-6 md:grid md:grid-cols-[2fr,2fr] lg:grid-cold-[2fr,3fr] m-8 p-4 bg-hero-2 bg-no-repeat bg-cover bg-center rounded-2xl">
+            <div class="flex flex-col space-y-10 py-12 md:pl-10 md:space-y-12">
+                <h2 class="text-4xl font-bold text-white">Find the best home furniture for your room</h2>
+                <p class="text-white text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                    nobis
+                    repellat
+                    beatae deleniti aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                    <a class="bg-gray-600 rounded-md px-4 duration-75 py-2 w-30 hover:bg-gray-800 text-white hover:text-white"
+                        href="#">Shop now</a>
+                </div>
+                <div class="flex space-x-3">
+                    <p class="text-white text-2xl border-r-2 pr-3">24k+</p>
+                    <p class="text-white text-2xl">10k+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="logos">
+        <div class="flex justify-between items-center px-10 space-x-4 py-6 md:px-20">
+            <img src="/images/logos/business-insider.png" alt="business-insider logo" class="logo-img">
+            <img src="/images/logos/forbes.png" alt="forbes logo" class="logo-img">
+            <img src="/images/logos/techcrunch.png" alt="techcrunch logo" class="logo-img">
+            <img src="/images/logos/the-new-york-times.png" alt="New york times logo" class="logo-img">
+            <img src="/images/logos/usa-today.png" alt="usa today logo" class="hidden md:block logo-img">
+        </div>
+    </section>
+
+    <section id="furniture">
+        <div class="m-10 mt-12">
+            <h3 class="text-gray-800 text-4xl text-center mb-4 font-semibold">Exclusive furniture</h3>
+            <p class="text-gray-400 text-center mb-8">Check out this week selection of popular products that may
+                catch
+                your eye and may not</p>
+            <div class="grid grid-cols-2 justify-center md:grid-cols-4 gap-3 gap-y-8 lg:px-16 lg:gap-2">
+                <div>
+                    <img src="images/house-living-room/house-living room 1.webp" alt="living-room image"
+                        class="furniture-img">
+                    <p class="furniture-p">Living room</p>
+                </div>
+                <div>
+                    <img src="images/house-bedroom/house-bedroom 3.jpg" alt="bedroom image" class="furniture-img">
+                    <p class="furniture-p">Bedroom</p>
+                </div>
+                <div>
+                    <img src="images/house-kitchen/house-kitchen 2.jfif" alt="Kitchen image" class="furniture-img">
+                    <p class="furniture-p">Kitchen</p>
+                </div>
+                <div>
+                    <img src="images/house-living-room/house-living room 1.webp" alt="Workplace image"
+                        class="furniture-img">
+                    <p class="furniture-p">Workplace</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="p-10">
+            <h3 class="text-3xl text-center mb-6">Our Features Special For You</h3>
+            <p class="text-sm text-gray-400 text-center">
+                We provide a wide variety of special features for all of you to make it easier and make you even
+                more
+                happy shopping here
+            </p>
+            <!--Features Section-->
+            <div class="mt-20 md:mt-10 grid grid-cols-2 gap-x-3 lg:gap-x-5 gap-y-6 md:grid-cols-4 lg:px-24">
+                <!--Features 1-->
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="M4.5 3.75a3 3 0 00-3 3v.75h21v-.75a3 3 0 00-3-3h-15z" />
+                        <path fill-rule="evenodd"
+                            d="M22.5 9.75h-21v7.5a3 3 0 003 3h15a3 3 0 003-3v-7.5zm-18 3.75a.75.75 0 01.75-.75h6a.75.75 0 010 1.5h-6a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="font-bold text-md">Easy Payment</p>
+                    <p class="text-sm text-gray-400">Very easy and fast payment to make it easier for users</p>
+                </div>
+                <!--Third feature-->
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="font-bold text-md">Lots of promos</p>
+                    <p class="text-sm text-gray-400">Very easy and fast payment to make it easier for users</p>
+                </div>
+                <!--last feature-->
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="M4.5 3.75a3 3 0 00-3 3v.75h21v-.75a3 3 0 00-3-3h-15z" />
+                        <path fill-rule="evenodd"
+                            d="M22.5 9.75h-21v7.5a3 3 0 003 3h15a3 3 0 003-3v-7.5zm-18 3.75a.75.75 0 01.75-.75h6a.75.75 0 010 1.5h-6a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="font-bold text-md">Fast Shipping</p>
+                    <p class="text-sm text-gray-400">Very easy and fast payment to make it easier for users</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                    </svg>
+                    <p class="font-bold text-md">Save in Cart</p>
+                    <p class="text-sm text-gray-400">Very easy and fast payment to make it easier for users</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container mx-auto p-10 mt-10 lg:px-20 flex flex-col space-y-16 justify-center items-center">
+            <div class="products">
+                <div class="overflow-hidden">
+                    <img src="images/house-sofa/house-sofa 1.webp" alt="A sofa"
+                        class="rounded-2xl md:w-96 w-full hover:scale-105 duration-150">
+                </div>
+                <div class="lg:py-16">
+                    <h4 class="text-3xl font-semibold mb-5 md:mb-8">Our Chair designs are modern and elegant</h4>
+                    <p class="text-sm text-gray-400 md:mb-10 mb-6">Modern and elegant products make customers love
+                        our
+                        products so
+                        that we become
+                        number 1 in furniture</p>
+                    <a class="bg-white rounded-md px-4 duration-75 py-2 w-30 border-2 border-gray-700 hover:bg-gray-800 hover:text-white"
+                        href="#">Shop now</a>
+                </div>
+            </div>
+            <div class="products-reverse">
+                <div class="md:py-6">
+                    <h4 class="text-3xl font-semibold mb-5 md:mb-8">More than 10k intresting products that we sell
+                    </h4>
+                    <p class="text-sm text-gray-400 md:mb-10 mb-6">More than 10k intresting products that we sell
+                        here
+                        and of course with good quality</p>
+                    <a class="bg-white rounded-md px-4 duration-75 py-2 w-30 border-2 border-gray-700 hover:bg-gray-800 hover:text-white"
+                        href="#">Shop now</a>
+                </div>
+                <div class="overflow-hidden">
+                    <img src="images/house-sofa/house-sofa 3.jpg" alt="A sofa"
+                        class="rounded-2xl md:w-96 w-full md:pr-3 pb-3 hover:scale-105 duration-150">
+                </div>
+            </div>
+            <div class="md:flex space-y-6 md:space-x-16 lg:w-[1000px]">
+                <div class="overflow-hidden">
+                    <img src="images/house-sofa/house-sofa 4.webp" alt="A sofa"
+                        class="rounded-2xl md:w-96 w-full hover:scale-105 duration-150">
+                </div>
+                <div class="lg:py-16">
+                    <h4 class="text-3xl font-semibold mb-5 md:mb-8">Lot of accessories to beautify your room</h4>
+                    <p class="text-sm text-gray-400 md:mb-10 mb-6">lots of intresting accessories to beautify your
+                        room,accessories from various countries</p>
+                    <a class="bg-white rounded-md px-4 duration-75 py-2 w-30 border-2 border-gray-700 hover:bg-gray-800 hover:text-white"
+                        href="#">Shop now</a>
+                </div>
+            </div>
+            <div class="products-reverse">
+                <div class="md:py-16">
+                    <h4 class="text-3xl font-semibold mb-5 md:mb-8">We sell the best quality products in the market
+                    </h4>
+                    <p class="text-sm text-gray-400 md:mb-10 mb-6">We sell the best qulity products in the market
+                        thats
+                        why we are preferred to others</p>
+                    <a class="bg-white rounded-md px-4 duration-75 py-2 w-30 border-2 border-gray-700 hover:bg-gray-800 hover:text-white"
+                        href="#">Shop now</a>
+                </div>
+                <div class="overflow-hidden">
+                    <img src="images/house-sofa/house-sofa 3.jpg" alt="A sofa"
+                        class="rounded-2xl md:w-96 w-full md:pr-3 pb-3 hover:scale-105 duration-150">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular">
+        <div class="py-16 px-8 relative">
+            <h3 class="text-4xl text-center mb-10 font-semibold capitalize">Our popular products</h3>
+            <div class="grid grid-cols-2 justify-center md:grid-cols-4 gap-x-4 gap-y-8 md:px-8 lg:px-20">
+                <!--Popular-1-->
+                <div class="flex flex-col space-y-2">
+                    <img src="images/house-chair/house-chair 4.jfif" alt=""
+                        class="w-64 shadow-md rounded-md bg-gray-300">
+                    <p class="text-sm text-gray-400">Study Chair</p>
+                    <p class="text-xs">Herman Miller Chair</p>
+                    <div class="flex space-x-4">
+                        <p class="text-xs text-gray-400 line-through">$41.20</p>
+                        <p class="text-xs font-semibold">$39.99</p>
+                    </div>
+                </div>
+                <!--Popular-2-->
+                <div class="flex flex-col space-y-2">
+                    <img src="images/house-chair/house-chair 1.jpg" alt=""
+                        class="w-64 shadow-md rounded-md bg-gray-300">
+                    <p class="text-sm text-gray-400">Study Chair</p>
+                    <p class="text-xs">Herman Miller Chair</p>
+                    <div class="flex space-x-4">
+                        <p class="text-xs text-gray-400 line-through">$41.20</p>
+                        <p class="text-xs font-semibold">$39.99</p>
+                    </div>
+                </div>
+                <!--Popular-3-->
+                <div class="flex flex-col space-y-2">
+                    <img src="images/house-chair/house-chair 3.webp" alt=""
+                        class="w-64 shadow-md rounded-md bg-gray-300">
+                    <p class="text-sm text-gray-400">Study Chair</p>
+                    <p class="text-xs">Herman Miller Chair</p>
+                    <div class="flex space-x-4">
+                        <p class="text-xs text-gray-400 line-through">$41.20</p>
+                        <p class="text-xs font-semibold">$39.99</p>
+                    </div>
+                </div>
+                <!--Popular-4-->
+                <div class="flex flex-col space-y-2">
+                    <img src="images/house-chair/house-chair 3.webp" alt=""
+                        class="w-64 shadow-md rounded-md bg-gray-300">
+                    <p class="text-sm text-gray-400">Study Chair</p>
+                    <p class="text-xs">Herman Miller Chair</p>
+                    <div class="flex space-x-4">
+                        <p class="text-xs text-gray-400 line-through">$41.20</p>
+                        <p class="text-xs font-semibold">$39.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <a href="#"
+                    class=" bg-black rounded-md mt-8 px-4 duration-75 py-2 hover:bg-white text-white hover:text-black flex justify-center w-52 mx-auto">See
+                    all
+                    Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <!--Testimonial 1-->
+        <div id="item-1" class="flex testimonial">
+            <div class="flex flex-col space-y-4 px-10">
+                <h3 class="text-2xl md:text-3xl text-gray-800 font-bold">This is what they say</h3>
+                <p class="text-lg text-gray-800 font-semibold">Complete application integrated and simple</p>
+                <p class="text-sm text-gray-400 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    laborum
+                    officia eligendi alias.
+                    Veritatis, eaque atque officiis, autem itaque quaerat rerum unde recusandae reiciendis omnis ab
+                    iste
+                    ratione commodi quis!</p>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-xl font-semibold">Amanda Manpo</p>
+                        <p class="text-gray-400">Designer</p>
+                    </div>
+                    <div class="flex space-x-2 items-center justify-center">
+                        <svg id="btn-left1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 bg-black p-2 rounded-full text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                        <p class="text-xl text-gray-400">1/5</p>
+                        <svg id="btn-right1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 rounded-full p-2 bg-black text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-hidden pb-10 px-12">
+                <img src="images/house-chair/house-sitting2.png" alt="Lady sitting on a chair"
+                    class="hover:scale-105 duration-200 mx-auto">
+            </div>
+        </div>
+        <!--Testimonial 2-->
+        <div id="item-2" class="hidden flex-col-reverse space-y-5 md:flex-row lg:px-20 mt-10">
+            <div class="flex flex-col space-y-4 px-10">
+                <h3 class="text-2xl md:text-3xl text-gray-800 font-bold">This is what they say</h3>
+                <p class="text-lg text-gray-800 font-semibold">Complete application integrated and simple</p>
+                <p class="text-sm text-gray-400 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    laborum
+                    officia eligendi alias.
+                    Veritatis, eaque atque officiis, autem itaque quaerat rerum unde recusandae reiciendis omnis ab
+                    iste
+                    ratione commodi quis!</p>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-xl font-semibold">Jessie Manpo</p>
+                        <p class="text-gray-400">Designer</p>
+                    </div>
+                    <div class="flex space-x-2 items-center justify-center">
+                        <svg id="btn-left2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 bg-black p-2 rounded-full text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                        <p class="text-xl text-gray-400">2/5</p>
+                        <svg id="btn-right2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 rounded-full p-2 bg-black text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-hidden pb-10 px-12">
+                <img src="images/house-chair/house-sitting2.png" alt="Lady sitting on a chair"
+                    class="hover:scale-105 duration-200 mx-auto">
+            </div>
+        </div>
+        <!--Testimonial 3-->
+        <div id="item-3" class="testimonial">
+            <div class="flex flex-col space-y-4 px-10">
+                <h3 class="text-2xl md:text-3xl text-gray-800 font-bold">This is what they say</h3>
+                <p class="text-lg text-gray-800 font-semibold">Complete application integrated and simple</p>
+                <p class="text-sm text-gray-400 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    laborum
+                    officia eligendi alias.
+                    Veritatis, eaque atque officiis, autem itaque quaerat rerum unde recusandae reiciendis omnis ab
+                    iste
+                    ratione commodi quis!</p>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-xl font-semibold">Kevin David</p>
+                        <p class="text-gray-400">Developer</p>
+                    </div>
+                    <div class="flex space-x-2 items-center justify-center">
+                        <svg id="btn-left3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 bg-black p-2 rounded-full text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                        <p class="text-xl text-gray-400">3/5</p>
+                        <svg id="btn-right3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 rounded-full p-2 bg-black text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-hidden pb-10 px-12">
+                <img src="images/house-chair/house-sitting2.png" alt="Lady sitting on a chair"
+                    class="hover:scale-105 duration-200 mx-auto">
+            </div>
+        </div>
+        <!--Testimonial 4-->
+        <div id="item-4" class="testimonial">
+            <div class="flex flex-col space-y-4 px-10">
+                <h3 class="text-2xl md:text-3xl text-gray-800 font-bold">This is what they say</h3>
+                <p class="text-lg text-gray-800 font-semibold">Complete application integrated and simple</p>
+                <p class="text-sm text-gray-400 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    laborum
+                    officia eligendi alias.
+                    Veritatis, eaque atque officiis, autem itaque quaerat rerum unde recusandae reiciendis omnis ab
+                    iste
+                    ratione commodi quis!</p>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-xl font-semibold">Matthew Bronnie</p>
+                        <p class="text-gray-400">Architect</p>
+                    </div>
+                    <div class="flex space-x-2 items-center justify-center">
+                        <svg id="btn-left4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 bg-black p-2 rounded-full text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                        <p class="text-xl text-gray-400">4/5</p>
+                        <svg id="btn-right4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 rounded-full p-2 bg-black text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-hidden pb-10 px-12">
+                <img src="images/house-chair/house-sitting2.png" alt="Lady sitting on a chair"
+                    class="hover:scale-105 duration-200 mx-auto">
+            </div>
+        </div>
+        <!--Testimonial 5-->
+        <div id="item-5" class="testimonial">
+            <div class="flex flex-col space-y-4 px-10">
+                <h3 class="text-2xl md:text-3xl text-gray-800 font-bold">This is what they say</h3>
+                <p class="text-lg text-gray-800 font-semibold">Complete application integrated and simple</p>
+                <p class="text-sm text-gray-400 italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    laborum
+                    officia eligendi alias.
+                    Veritatis, eaque atque officiis, autem itaque quaerat rerum unde recusandae reiciendis omnis ab
+                    iste
+                    ratione commodi quis!</p>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-xl font-semibold">Blessing Johnson</p>
+                        <p class="text-gray-400">Lawyer</p>
+                    </div>
+                    <div class="flex space-x-2 items-center justify-center">
+                        <svg id="btn-left5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 bg-black p-2 rounded-full text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                        <p class="text-xl text-gray-400">5/5</p>
+                        <svg id="btn-right5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 rounded-full p-2 bg-black text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-hidden pb-10 px-12">
+                <img src="images/house-chair/house-sitting2.png" alt="Lady sitting on a chair"
+                    class="hover:scale-105 duration-200 mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black mt-10 py-10 text-white px-10">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="flex flex-col space-y-16 md:space-y-0 md:space-x-20 md:flex-row">
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg mb-5 font-semibold uppercase">Customer Service</h4>
+                    <div class="flex flex-col space-y-1 items-center md:items-start md:space-y-2">
+                        <a href="#" class="text-sm">Position Center</a>
+                        <a href="#" class="text-sm">How to Shop</a>
+                        <a href="#" class="text-sm">Payment</a>
+                        <a href="#" class="text-sm">Pricing</a>
+                        <a href="#" class="text-sm">Installation & payment properties</a>
+                        <a href="#" class="text-sm">Free Shopping</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg mb-5 uppercase font-semibold">Supreme</h4>
+                    <div class="flex flex-col space-y-1 items-center md:items-start md:space-y-2">
+                        <a href="#" class="text-sm">About Information</a>
+                        <a href="#" class="text-sm">Blog</a>
+                        <a href="#" class="text-sm">E-commerce</a>
+                        <a href="#" class="text-sm">Store-location</a>
+                        <a href="#" class="text-sm">Center</a>
+                        <a href="#" class="text-sm">Affilation</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg mb-5 uppercase font-semibold">Help</h4>
+                    <div class="flex flex-col space-y-1 items-center md:items-start md:space-y-2">
+                        <a href="#" class="text-sm">Privacy policy</a>
+                        <a href="#" class="text-sm">Terms & Condition</a>
+                        <a href="#" class="text-sm">Contact Us</a>
+                        <a href="#" class="text-sm">Help</a>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg mb-5 uppercase font-semibold">OUR MOBILE APP</h4>
+                    <div class="mb-3 md:mb-8">
+                        <p class="text-sm">Download supreme app available now on IOS and android</p>
+                        <div class="mt-3 flex flex-col md:space-x-4 md:flex-row items-center space-y-2">
+                            <img src="images/logos/house-apple store.png" alt="apple download image"
+                                class="w-24 cursor-pointer">
+                            <img src="images/logos/house-apple store 2.png" alt="play store download"
+                                class="w-24 cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <h5 class="uppercase mb-3">Newsletter list</h5>
+                        <p class="text-sm mb-2 text-center md:text-start">Be the first to get information on
+                            discounts
+                            and attractive
+                            offers from
+                            supreme shoes.com</p>
+                        <div>
+                            <input type="text" placeholder="Enter your mail"
+                                class="focus:border-none placeholder:text-gray-400 p-1 text-black rounded-lg md:mb-4 md:mr-4">
+                            <a href="#"
+                                class="text-white border border-white px-3 rounded-2xl py-2 hover:text-black hover:bg-white duration-200">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

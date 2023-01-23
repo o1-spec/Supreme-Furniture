@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .link{
+        @apply tracking-widest text-sm hover:text-gray-400 font-semibold
+    }
+    .logo-img{
+        @apply w-16 md:w-20 md:h-8 h-5 filter brightness-0 opacity-50
+    }
+
+    .furniture-img{
+        @apply lg:w-60 rounded-xl transform hover:-translate-y-2 duration-200 shadow-lg
+    }
+
+    .furniture-p{
+        @apply mt-2 text-center text-gray-500 font-semibold
+    }
+}
+
+@layer components{
+    .feature{
+        @apply bg-gray-200 rounded-md px-4 py-6 flex flex-col space-y-5 shadow-md transform hover:-translate-y-2 duration-200
+    }
+
+    .products{
+        @apply flex flex-col md:flex-row space-y-6 md:space-x-16 lg:w-[1000px]
+    }
+
+    .products-reverse{
+        @apply flex flex-col-reverse md:flex-row space-y-6 md:space-x-16 lg:w-[1000px]
+    }
+
+    .testimonial{
+        @apply hidden flex-col-reverse space-y-5 md:flex-row lg:px-20 mt-10
+    }
+}
