@@ -25,11 +25,11 @@
     }
 
     .products{
-        @apply flex flex-col md:flex-row space-y-6 md:space-x-16 lg:w-[1000px]
+        @apply flex flex-col md:flex-row space-y-6 md:space-x-16 lg:w-[1000px] lg:px-8
     }
 
     .products-reverse{
-        @apply flex flex-col-reverse md:flex-row space-y-6 md:space-x-16 lg:w-[1000px]
+        @apply flex flex-col-reverse md:flex-row space-y-6 md:space-x-16 lg:w-[1000px] lg:px-8
     }
 
     .testimonial{
